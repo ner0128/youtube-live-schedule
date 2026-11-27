@@ -29,14 +29,18 @@ TC-009,F-42,"태그된 채널 확인, `@핸들` 뒤에 단일 혹은 복수의 �
 `@ChannelT_`
 `@ChannelT.`
 `@ChannelT·`
-`@ChannelT__`",
+`@ChannelT__`
+`@ChannelT._`
+`@ChannelT_ `",
 TC-010,F-42,"태그된 채널 확인, `@핸들` 뒤에 단일 혹은 복수의 구분 기호(`-`, `_`, `.`, `·`) 및 글자가 이어짐",등록된 채널에 채널이 존재할 것,"1. 등록 채널 입력값에 대해 태그 판정 함수(`mention_patterns`)를 실행하고 입력 문자열을 넣는다
 2. 판정 결과(태그된 등록 채널)를 확인한다",등록 채널 입력값에 맞는 태그로 판정되지 않음,"등록: `@ChannelT`
 개요: `@ChannelT-ABC`
 `@ChannelT_ABC`
 `@ChannelT.ABC`
 `@ChannelT·ABC`
-`@ChannelT__ABC`",
+`@ChannelT__ABC`
+`@ChannelT_-ABC`
+`@ChannelT_123`",
 TC-011,F-42,"태그된 채널 확인, `@핸들` 뒤에 구분 기호(`-`, `_`, `.`, `·`)를 뺀 특수문자",등록된 채널에 채널이 존재할 것,"1. 등록 채널 입력값에 대해 태그 판정 함수(`mention_patterns`)를 실행하고 입력 문자열을 넣는다
 2. 판정 결과(태그된 등록 채널)를 확인한다",등록 채널 입력값에 맞는 태그로 판정됨,"등록: `@ChannelT`
 개요: `@ChannelT: 게스트`",
